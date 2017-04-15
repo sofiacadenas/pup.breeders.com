@@ -1,17 +1,16 @@
 body{
-	background-color:#00BFFF;
+	background-color:#F0FFFF;
 	}
 
 h1 {
 	size:400px;
-  	color:#00FFFF;
-	font-family: 'Supermercado One', cursive;
-	font-family: 'Griffy', cursive;
+  	color:#00BFFF;
+	font-family:  'Courgette', cursive;
  }
 
 p{
 	size:100px;
- 	 color:#FF00FF;
+ 	 color:#C71585;
 	  
 }
 
