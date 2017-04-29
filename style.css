@@ -1,0 +1,22 @@
+
+body{
+	background-color:#F0FFFF;
+	}
+
+h1 {
+	font-size:400px;
+  	color:#00FFFF;
+	font-family: 'Baloo', cursive;
+        text-align: center;
+            
+ }
+
+p{
+	size:100px;
+ 	 color:#C71585;
+	  
+}
+ul {
+	text-decoration:none;
+	display:inline-block;
+}
