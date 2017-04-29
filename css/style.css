@@ -15,5 +15,9 @@ p{
  	 color:#C71585;
 	  
 }
+ul li {
+	text-decoration:none;
+	display:inline-block;
+}
 
 
