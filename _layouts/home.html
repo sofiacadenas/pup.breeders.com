@@ -10,7 +10,7 @@
      <header> 
    </header>
    
-
+<section>
     <a href="https://sofiacadenas.github.io/pup.breeders.com">github pages</a>
     <h1> Welcome to pup breeders!</h1>
     <form action="http://www.google.com/search" class="searchform" method="get" name="searchform" target="_blank">
@@ -24,6 +24,53 @@
       <li><img src = "http://www.petmd.com/sites/default/files/salmonella-infection-dogs.jpg"width = 300></li>
       <li><img src = "https://content.rspca.org.uk/cmsprd/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1233041352441&ssbinary=true"width = 300></li>
      </ul>
+    <a class="js-open-modal btn" href="#" data-modal-id="popup1"> Pop Up One</a> 
+</section>
+
+<div id="popup1" class="modal-box">
+  <header> <a href="#" class="js-modal-close close">×</a>
+    <h3>Bob</h3>
+  </header>
+  <div class="modal-body">
+    <img src="http://cdn2-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-8.jpg" width="300">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut commodo at felis vitae facilisis. Cras volutpat fringilla nunc vitae hendrerit. </p>
+  </div>
+  <footer> <a href="#" class="btn btn-small js-modal-close">Close</a> </footer>
+</div>
+
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script> 
+
+<script>
+$(function(){
+var appendthis =  ("<div class='modal-overlay js-modal-close'></div>");
+	$('a[data-modal-id]').click(function(e) {
+		e.preventDefault();
+    $("body").append(appendthis);
+    $(".modal-overlay").fadeTo(500, 0.7);
+    //$(".js-modalbox").fadeIn(500);
+		var modalBox = $(this).attr('data-modal-id');
+		$('#'+modalBox).fadeIn($(this).data());
+	});  
+  
+  
+$(".js-modal-close, .modal-overlay").click(function() {
+    $(".modal-box, .modal-overlay").fadeOut(500, function() {
+        $(".modal-overlay").remove();
+    });
+ 
+});
+ 
+$(window).resize(function() {
+    $(".modal-box").css({
+        top: ($(window).height() - $(".modal-box").outerHeight()) / 2,
+        left: ($(window).width() - $(".modal-box").outerWidth()) / 2
+    });
+});
+ 
+$(window).resize();
+ 
+});
+</script>
     
     
     
