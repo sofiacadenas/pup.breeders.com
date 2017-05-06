@@ -37,47 +37,17 @@
    <img scr="http://cdn.earthporm.com/wp-content/uploads/2015/09/cross-breed-dog-4__605.jpg" width="300">
 	  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut commodo at felis vitae facilisis. Cras volutpat fringilla nunc vitae hendrerit. </p>
   </div>
-  <footer> <a href="#" class="btn btn-small js-modal-close">Close</a> </footer>
 </div>
 
 <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script> 
 
 <script>
-$(function(){
-var appendthis =  ("<div class='modal-overlay js-modal-close'></div>");
-	$('a[data-modal-id]').click(function(e) {
-		e.preventDefault();
-    $("body").append(appendthis);
-    $(".modal-overlay").fadeTo(500, 0.7);
-    //$(".js-modalbox").fadeIn(500);
-		var modalBox = $(this).attr('data-modal-id');
-		$('#'+modalBox).fadeIn($(this).data());
-	});  
-  
-  
-$(".js-modal-close, .modal-overlay").click(function() {
-    $(".modal-box, .modal-overlay").fadeOut(500, function() {
-        $(".modal-overlay").remove();
-    });
- 
-});
- 
-$(window).resize(function() {
-    $(".modal-box").css({
-        top: ($(window).height() - $(".modal-box").outerHeight()) / 2,
-        left: ($(window).width() - $(".modal-box").outerWidth()) / 2
-    });
-});
- 
-$(window).resize();
- 
-});
 </script>
-    
     
     
    
      <footer> 
+<a href="#" class="btn btn-small js-modal-close">Close</a>
     <button type="button">RAVELRY</button>
     <a href="https://www.puppies.com">Puppies</a>
   </footer>
