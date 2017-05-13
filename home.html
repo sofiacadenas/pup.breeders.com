@@ -4,56 +4,35 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
     <script src="https://www.google.com/uds/api?file=uds.js&v=1.0&key=YOURKEYHERE" type="text/javascript"></script>
-	<script language="Javascript" type="text/javascript"> //<![CDATA[ // Create a search control var searchControl = new GSearchControl(); // create a search object searchControl.addSearcher(new GwebSearch()); // tell Google where to draw the searchbox searchControl.draw(document.getElementById("search-box")); } GSearch.setOnLoadCallback(OnLoad); //]]> </script>
-    
-	                                <title>Welcome to Pup Breeders!</title>
+    <link rel="stylesheet" href="./lightbox2-master/dist/css/lightbox.min.css">
+	  
+  <title>Welcome to Pup Breeders!</title>
   </head>
+
   <body>
-     <header> 
-   </header>
-   
+    <header> 
+        <h1> Welcome to pup breeders!</h1>
+    </header>
+    <section>
+      <h2>Search for Puppies in Google Images</h2>
+      <div id="search">   
+        <form method ="get" action="http://images.google.com/images" target="_blank">
+          <input type="text" name="q" />
+          <input type="submit" value="Search puppies" />
+        </form>
+      </div>
+    </section>
 <section>
-    <a href="https://sofiacadenas.github.io/pup.breeders.com">github pages</a>
-    <h1> Welcome to pup breeders!</h1>
-     <form method ="get" action="http://images.google.com/images">
-	<input type="text" name="q" />
-	<input type="submit" value="Search puppies" />
-</form>
-	<div id="search-box"> </div>
-    
-    <ul>
-      <li><img src = "http://r.ddmcdn.com/w_830/s_f/o_1/cx_0/cy_220/cw_1255/ch_1255/APL/uploads/2014/11/dog-breed-selector-australian-shepherd.jpg" width = 300></li> 
-      <li><img src = "http://www.petmd.com/sites/default/files/salmonella-infection-dogs.jpg"width = 300></li>
-      <li><img src = "https://content.rspca.org.uk/cmsprd/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1233041352441&ssbinary=true"width = 300></li>
-      <li><img src = "https://s-media-cache-ak0.pinimg.com/736x/80/d3/64/80d364e09d31fcba8af274926d4332ff.jpg"></li>
-     </ul>
-    <a class="js-open-modal btn" href="#" data-modal-id="popup1"> Pop Up One</a> 
+	<div id="pics">
+      <a class="example-image-link" href="http://r.ddmcdn.com/w_830/s_f/o_1/cx_0/cy_220/cw_1255/ch_1255/APL/uploads/2014/11/dog-breed-selector-australian-shepherd.jpg" data-lightbox="example-set" data-title="Lilly"><img class="example-image" src="http://r.ddmcdn.com/w_830/s_f/o_1/cx_0/cy_220/cw_1255/ch_1255/APL/uploads/2014/11/dog-breed-selector-australian-shepherd.jpg" alt="" width="200"/></a>
+      <a class="example-image-link" href="http://www.petmd.com/sites/default/files/salmonella-infection-dogs.jpg" data-lightbox="example-set" data-title="Cutie"><img class="example-image" src="http://www.petmd.com/sites/default/files/salmonella-infection-dogs.jpg" alt="" width="200"/></a>
+      <a class="example-image-link" href="https://content.rspca.org.uk/cmsprd/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1233041352441&ssbinary=true" data-lightbox="example-set" data-title="Roxie"><img class="example-image" src="https://content.rspca.org.uk/cmsprd/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1233041352441&ssbinary=true" alt="" width="200"/></a>
+      <a class="example-image-link" href="https://s-media-cache-ak0.pinimg.com/736x/80/d3/64/80d364e09d31fcba8af274926d4332ff.jpg" data-lightbox="example-set" data-title="Fluffy"><img class="example-image" src="https://s-media-cache-ak0.pinimg.com/736x/80/d3/64/80d364e09d31fcba8af274926d4332ff.jpg" alt="" width="200"/></a>
+  </div>  
 </section>
 
-<div id="popup1" class="modal-box">
-  <header> <a href="#" class="js-modal-close close">×</a>
-    <h3>Bob</h3>
-  </header>
-  <div class="modal-body">
-    <img src="http://cdn2-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-8.jpg" width="300">
-   <img scr="http://cdn.earthporm.com/wp-content/uploads/2015/09/cross-breed-dog-4__605.jpg" width="300">
-	  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut commodo at felis vitae facilisis. Cras volutpat fringilla nunc vitae hendrerit. </p>
-  </div>
-</div>
+<script src="./lightbox2-master/dist/js/lightbox-plus-jquery.min.js"></script>    
 
-<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script> 
-
-<script>
-</script>
-    
-    
-   
-     <footer> 
-<a href="#" class="btn btn-small js-modal-close">Close</a>
-    <button type="button">RAVELRY</button>
-    <a href="https://www.puppies.com">Puppies</a>
-  </footer>
-   
   </body>
 </html>
    
